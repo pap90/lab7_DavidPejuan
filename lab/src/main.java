@@ -220,10 +220,10 @@ public class main extends javax.swing.JFrame {
         DefaultComboBoxModel modelo = new DefaultComboBoxModel(nodos.toArray());
         cb_todo.setModel(modelo);
 
-        /*DefaultTreeModel modeloArbol = (DefaultTreeModel) jt_carros.getModel();
-        DefaultMutableTreeNode p = new DefaultMutableTreeNode(new carro(tf_carro.getText()));
+        DefaultTreeModel modeloArbol = (DefaultTreeModel) jt_carros.getModel();
+        //DefaultMutableTreeNode p = new DefaultMutableTreeNode(new carro(tf_carro.getText()));
         modeloArbol.setRoot(p);
-        modeloArbol.reload();*/
+        modeloArbol.reload();
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
@@ -234,7 +234,7 @@ public class main extends javax.swing.JFrame {
         cb_todo.setModel(modelo);
         if (cb_todo.getSelectedIndex() >= 0) {
             DefaultTreeModel modeloArbol=(DefaultTreeModel) jt_carros.getModel();
-            DefaultMutableTreeNode raiz (DefaultMutableTreeNode) modeloArbol.getChild(modeloArbol, cb_todo.getSelectedIndex());
+//            DefaultMutableTreeNode raiz (DefaultMutableTreeNode) modeloArbol.getChild(modeloArbol, cb_todo.getSelectedIndex());
             //DefaultMutableTreeNode raiz = (DefaultMutableTreeNode) modeloArbol.getChild(r, WIDTH);
         }
 
